@@ -1,0 +1,51 @@
+{
+  "buildscript": {
+    "repositories": {
+      "mavenCentral()": null,
+      "maven": {
+        "url": [
+          "http://download.crashlytics.com/maven",
+          "http://maven.springframework.org/release",
+          "http://maven.restlet.org"
+        ]
+      }
+    },
+    "dependencies": {
+      "classpath": [
+        "com.android.tools.build:gradle:0.9.+",
+        "com.crashlytics.tools.gradle:crashlytics-gradle:1.+"
+      ]
+    },
+    "setTwo": {
+      "hello": [
+        "com.android.tools.build:gradle:0.9.+",
+        "com.crashlytics.tools.gradle:crashlytics-gradle:1.+"
+      ]
+    },
+    "compileSdk": [
+      "30"
+    ],
+    "apply": [
+      "plugin: crashlytics"
+    ],
+    "buildToolsVersion": [
+      "30.0.3"
+    ]
+  },
+  "android": {
+    "defaultConfig": {
+      "versionCode": [
+        "1"
+      ],
+      "versionName": [
+        "1.0"
+      ]
+    }
+  },
+  "plugins": {
+    "id": [
+      "com.android.application",
+      "kotlin-android"
+    ]
+  }
+}
